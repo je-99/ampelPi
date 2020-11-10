@@ -10,7 +10,6 @@ gruen = 17
 
 # GPIO Slot Gelb
 gelb = 27
-
 # GPIO Slot Rot
 rot = 22
 
@@ -40,7 +39,7 @@ while True:
         GPIO.output(rot, GPIO.HIGH)
         print("You may go now!")
         time.sleep(12)
-        print("Please stop, cars will get a green signal soon!")
+        print("Please stop, cars will get a green light soon!")
         time.sleep(3)
         GPIO.output(gruen, GPIO.LOW)
         GPIO.output(gelb, GPIO.HIGH)
